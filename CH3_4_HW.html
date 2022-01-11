@@ -184,19 +184,19 @@ pre code {
 <div id="chapter-3" class="section level2">
 <h2>Chapter 3</h2>
 <ol style="list-style-type: decimal">
-<li>A variable is many observations of the same measurement.</li>
+<li>A variable is many observations of the same measurement. We can categorize variables into several groups (categorical, continuous, ordinal, count, and qualitative).</li>
 </ol>
-<p>2a. ordinal</p>
-<p>2b. categorical</p>
-<p>2c. count</p>
-<p>2d. continuous</p>
-<p>2e. count</p>
-<p>2f. count</p>
-<p>2g. qualitative</p>
-<p>2h. qualitative</p>
-<p>2i. ordinal</p>
+<p>2a. Ordinal</p>
+<p>2b. Categorical</p>
+<p>2c. Count</p>
+<p>2d. Continuous</p>
+<p>2e. Count</p>
+<p>2f. Count</p>
+<p>2g. Qualitative</p>
+<p>2h. Qualitative</p>
+<p>2i. Ordinal</p>
 <ol start="3" style="list-style-type: decimal">
-<li>b (distribution)</li>
+<li>B (distribution)</li>
 </ol>
 <p>4a. Calculating average salary</p>
 <pre class="r"><code>num &lt;- (85000*5+90000*4+100000+120000*2+125000*3+130000*2)
@@ -211,19 +211,19 @@ sevfifth_percentile &lt;- 125000
 sevfifth_percentile - twfifth_percentile</code></pre>
 <pre><code>## [1] 40000</code></pre>
 <ol start="5" style="list-style-type: decimal">
-<li><p>c (Greek letters)</p></li>
-<li><p>a (Log transforming the variable)</p></li>
-<li><p>d, a, c, b</p></li>
+<li><p>C (Greek letters)</p></li>
+<li><p>A (Log transforming the variable)</p></li>
+<li><p>D, A, C, B</p></li>
 </ol>
 <p>8a. The distribution has a median close to 80 and is slightly right skewed, meaning the mean is likely a bit higher than 80. It has a range of 15, and is slightly bimodal.</p>
-<p>8b. Yes, there is a slight right skew.</p>
+<p>8b. Yes, the distribution is slightly right skewed.</p>
 <p>8c. The median would be better, because due to the slight dominance of higher values (as indicated by the right skew), the mean will be slightly pulled up by these higher outliers. Therefore, the median will more closely reflect the center of the distribution.</p>
 <p>8d. IQR could be used to describe the variability of the distribution, as could standard error.</p>
 <ol start="9" style="list-style-type: decimal">
-<li>b (mean is less than median)</li>
+<li>B (mean is less than median)</li>
 </ol>
-<p>10a. ordinal</p>
-<p>10b. count</p>
+<p>10a. Ordinal</p>
+<p>10b. Count</p>
 <p>10c. Graphing the data</p>
 <pre class="r"><code>data &lt;- data.frame(
   name=c(&quot;freshman&quot;,&quot;sophomore&quot;,&quot;junior&quot;,&quot;senior&quot;) ,  
@@ -240,13 +240,13 @@ mean(data)</code></pre>
 <pre><code>## [1] 67.8</code></pre>
 <pre class="r"><code>median(data)</code></pre>
 <pre><code>## [1] 68</code></pre>
-<pre class="r"><code>range(data)</code></pre>
-<pre><code>## [1] 63 73</code></pre>
+<pre class="r"><code>max(data)-min(data)</code></pre>
+<pre><code>## [1] 10</code></pre>
 <pre class="r"><code>sd(data)</code></pre>
 <pre><code>## [1] 3.962323</code></pre>
 <pre class="r"><code>IQR(data)</code></pre>
 <pre><code>## [1] 5</code></pre>
-<p>The mean and median are very similar (67.8 vs 68) and therefore the distribution is likely fairly symmetric. This is also evident in the standard deviation, which is relatively small (3.96).</p>
+<p>The mean and median are very similar (67.8 vs 68) and therefore the distribution is likely fairly symmetric. The min and max are also equidistant from the median, which implies some symmetry. This is also evident in the standard deviation, which is relatively small (3.96).</p>
 <p>11b. A normal distribution is likely to have generated this dataset, especially given that it is a physical characteristic (height).</p>
 <p>11c. I think we would need more data to confirm this. Though we know that heights generally distribute normally, concluding this based on a sample of only 5 datapoints from one family would be presumptious.</p>
 </div>
@@ -274,8 +274,8 @@ mean(data)</code></pre>
 <pre class="r"><code>4-3.5*(-2)</code></pre>
 <pre><code>## [1] 11</code></pre>
 <ol start="6" style="list-style-type: decimal">
-<li><p>c (covariance)</p></li>
-<li><p>Covariance describes how two variables move together or apart; correlation is a scaled version of covariance. The correlation coefficient is calculated by taking the covariance between X and Y and dividing by both the standard deviation of X and the standard deviation of Y.</p></li>
+<li><p>C (covariance)</p></li>
+<li><p>Covariance describes how two variables move together or apart; correlation is a scaled version of covariance. The correlation coefficient describes for a one standard deviation increase in one variable, how much change (increase or decrease) occurs in the other variable. The correlation coefficient is calculated by taking the covariance between X and Y and dividing by both the standard deviation of X and the standard deviation of Y.</p></li>
 </ol>
 <p>8a. Linear</p>
 <p>8b. Quadratic (parabolic)</p>
